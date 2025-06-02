@@ -27,7 +27,7 @@ export function getComponent(name: string): Component {
 
 export async function getPrompt(): Promise<string> {
   try {
-    const response = await fetch("/v0.md");
+    const response = await fetch("/v0.mdc");
     if (!response.ok) throw new Error("Failed to fetch prompt");
     return await response.text();
   } catch (error) {

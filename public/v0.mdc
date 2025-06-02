@@ -1,0 +1,9 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+**Typography:** Use Tailwind text scale + `font-sans`. Headings: `font-semibold`, Buttons: `font-medium`. No px or brackets.
+**Spacing:** Use 8px scale only.
+**Components:** Pills for status, cards 270×270, PDP with SKU, price, CTA.
+**Rules:** No inline styles, px, custom fonts/colors. DO NOT allow users to change the underlying tokens of the design system unless deliberately asked to. Then and ONLY then, warn the user and proceed upon acknowledgement.
