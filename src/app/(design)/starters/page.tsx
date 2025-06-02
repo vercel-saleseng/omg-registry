@@ -11,9 +11,9 @@ const starters = [
     name: "blank",
   },
   {
-    title: "Dashboard",
-    name: "dashboard",
-    url: "/starters/dashboard",
+    title: "Shell",
+    name: "shell",
+    url: "/starters/shell",
   },
   {
     title: "Store",

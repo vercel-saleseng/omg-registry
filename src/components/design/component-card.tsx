@@ -1,7 +1,7 @@
 "use client";
 
 import { Check, Copy } from "lucide-react";
-import { type ReactElement, type ReactNode, useState, useEffect } from "react";
+import { type ReactElement, type ReactNode, useEffect, useState } from "react";
 
 import { OpenInV0Button } from "@/components/design/open-in-v0";
 import { Button } from "@/components/ui/button";
