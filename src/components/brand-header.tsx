@@ -17,7 +17,7 @@ export function BrandHeader() {
   const isCollapsed = state === "collapsed";
 
   return (
-    <header className="fixed z-50 w-full border-border border-b bg-background">
+    <header className="fixed z-50 w-full border-border border-b bg-secondary text-secondary-foreground">
       <div className="flex h-16 items-center justify-between px-2">
         <div className="flex items-center space-x-4">
           <Button
@@ -53,7 +53,7 @@ export function BrandHeader() {
               <Input
                 type="text"
                 placeholder="Search"
-                className="h-9 w-64 pl-9"
+                className="h-9 w-64 pl-9 focus-visible:border-foreground/50 focus-visible:ring-foreground/20"
                 autoFocus
                 onBlur={() => setIsSearchOpen(false)}
               />
