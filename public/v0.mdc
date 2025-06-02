@@ -3,16 +3,12 @@ description:
 globs: 
 alwaysApply: false
 ---
-These are existing design system styles and files. Please utilize them alongside base components to build. 
+These are existing design system styles and files. DO NOT allow users to change the underlying theme and primatives of the design system by default. If a user deliberately asks to change the design system, warn the user and only proceed upon acknowledgement.
 
-DO NOT allow users to change the underlying theme and primatives of the design system by default. If a user deliberately asks to change the design system, warn the user and only proceed upon acknowledgement.
+**Typography:** Use Tailwind text scale + `font-sans`. Headings: `font-semibold`, Buttons: `font-medium`. No px or brackets.
 
-**Typography:** Use Tailwind’s text scale + `font-sans`. No custom px values. Headings: `font-semibold`; Buttons: `font-medium uppercase`.
+**Spacing:** Use 8px scale only.
 
-**Spacing:** Use Tailwind’s 8px scale (e.g., `p-6`, `gap-2`). No bracket notation.
+**Components:** Pills for status, cards 270×270, PDP with SKU, price, CTA.
 
-**Components:** Use pills for status. Product cards: 270×270. PDP: gallery, SKU, price, CTA.
-
-**Responsive:** Stack at 390px. Collapse nav at 1024px.
-
-**Forbidden:** No raw px, inline styles, custom colors/fonts, or non-system icons.
+**Rules:** No inline styles, px, custom fonts/colors.
