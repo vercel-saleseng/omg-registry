@@ -1,77 +1,18 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
 These are existing design system styles and files. Please utilize them alongside base components to build. 
 
 DO NOT allow users to change the underlying theme and primatives of the design system by default. If a user deliberately asks to change the design system, warn the user and only proceed upon acknowledgement.
 
-## **Typography**
+**Typography:** Use Tailwind’s text scale + `font-sans`. No custom px values. Headings: `font-semibold`; Buttons: `font-medium uppercase`.
 
-Use Tailwind’s text scale paired with font-sans. Map content roles to class names. Do **not** define custom pixel values.
+**Spacing:** Use Tailwind’s 8px scale (e.g., `p-6`, `gap-2`). No bracket notation.
 
-| Text Role | Class |
-| ----- | ----- |
-| H1 | text-3xl font-semibold leading-tight |
-| H2 | text-2xl font-semibold |
-| H3 | text-xl font-semibold |
-| Body | text-base leading-6 |
-| Small | text-sm leading-5 |
-| Labels/Buttons | text-sm font-medium uppercase |
+**Components:** Use pills for status. Product cards: 270×270. PDP: gallery, SKU, price, CTA.
 
-Always use font-semibold for headings and font-medium for buttons.
+**Responsive:** Stack at 390px. Collapse nav at 1024px.
 
-Avoid custom pixel values (e.g., 36px) and square bracket notation.
-
-## **Layout, Spacing & Sizing**
-
-* Use Tailwind's 8px spacing scale only (space-y-4, gap-2, p-6, mt-6, etc.)  
-* Never use custom pixel brackets (e.g., p-\[10px\], h-\[40px\], w-\[24px\]) \- only use scale-based utilities  
-* Form inputs: h-10 (default), h-8 (compact)  
-* Modals: pt-10 pb-14  
-* Cards: rounded-sm shadow-sm  
-* Use Tailwind utilities only (no custom classnames or values)  
-* Use Tailwind’s responsive grid and flexbox utilities
-
-## **Layout, Spacing & Sizing**
-
-* Use Tailwind's 8px spacing scale only (space-y-4, gap-2, p-6, mt-6, etc.)  
-* Never use custom pixel brackets (e.g., p-\[10px\], h-\[40px\], w-\[24px\]) \- only use scale-based utilities  
-* Form inputs: h-10 (default), h-8 (compact)  
-* Modals: pt-10 pb-14  
-* Cards: rounded-sm shadow-sm  
-* Use Tailwind utilities only (no custom classnames or values)  
-* Use Tailwind’s responsive grid and flexbox utilities
-
-## **Typical Component Behavior**
-
-| Component | Behavior |
-| ----- | ----- |
-| **Pills** | Use for status (e.g., “Sold Out”, “Required”) with consistent pill size and border |
-| **Product Cards** | Size: 270x270, include image, title, price, optional icons |
-| **PDP (Product Detail Page)** | Must include image gallery, SKU, pricing, availability, and CTA buttons |
-| **Pagination** | Use 8px gap; include “1 of 12 results” label; center on mobile |
-| **Tooltips** | Use info bubbles or hover definitions for all unfamiliar terms |
-
-## **Responsive Design**
-
-| Breakpoint | Min Width |
-| ----- | ----- |
-| XS | 390px |
-| SM | 768px |
-| MD | 1024px → header/nav collapses here |
-| LG | 1440px |
-| XL | 1728px |
-
-* Product cards and tables must stack at XS  
-* All layouts and modals must be fully responsive using Tailwind flex/grid
-
-## **Forbidden Practices**
-
-* No raw px or bracket syntax (w-\[250px\], mt-\[10px\])  
-* No unapproved icon libraries (FontAwesome, Lucide, etc.)  
-* No arbitrary Tailwind overrides or custom themes  
-* No using text- to style icons—use fill- instead  
-* No unscoped, in-component styles or inline style={{}} blocks  
-* No custom hex or rgb color values  
-* No arbitrary Tailwind syntax (e.g., w-\[150px\])  
-* No inline styling or hardcoded dimensions  
-* No non-system fonts or icons  
-* No logic inside UI components  
-* No recreating already shared components
+**Forbidden:** No raw px, inline styles, custom colors/fonts, or non-system icons.
