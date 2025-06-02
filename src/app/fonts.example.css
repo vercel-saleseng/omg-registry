@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "Clario";
+  src: url("https://cdn.prod.website-files.com/62b9da2ab8b4106d183fbf47/66fe9d8418bb732a9f0ea8c4_Clario-Regular.ttf")
+    format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Clario";
+  src: url("https://cdn.prod.website-files.com/62b9da2ab8b4106d183fbf47/66fea553e5c842e0b3e68006_Clario-Medium.ttf")
+    format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Clario";
+  src: url("https://cdn.prod.website-files.com/62b9da2ab8b4106d183fbf47/66fea553b62083f2b7142056_Clario-Bold.ttf")
+    format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
